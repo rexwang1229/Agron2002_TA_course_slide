@@ -1,0 +1,81 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[margin=1in]{geometry}
+\usepackage{wrapfig}
+\usepackage[justification=centering]{caption}
+\usepackage[subnum]{cases}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\usepackage{empheq}
+
+
+\title{Agron 2002 Statistics\\ {\bf Lab Report 2}}
+\date{23 March 2026}
+
+
+\begin{document}
+\maketitle
+\section*{Instruction}
+\begin{itemize}
+    \item Paste your code (text, not screenshot) and output (screenshot) in a pdf file
+    \item Format: \textbf{pdf} only
+    \item Deadline: 2026/03/29 (SUN) 23:59
+    \item Late submission is not accepted
+\end{itemize}
+
+
+\section*{Exercise 1: Descriptive Statistics}
+Your friend is planning to buy a new mobile phone as a gift for the person he/she is dating. 
+You found a file named \textit{\textbf{mobiles.csv}} on the internet that contains details about various mobile 
+phones. Explore the data to get useful information:
+
+\textbf{a.} How many mobile phone models are included in the dataset?
+
+\textbf{b.} If your friend wants the screen size to be greater than the 42th percentile but less than the 87th percentile, what range of screen sizes should you look for?
+
+\textbf{c.} Your friend wants to know about the descriptive statistics of mobile phone weights. Use 
+the functions summary() and var() to get statistics for the "Mobile Weight" column. 
+What do you get?
+
+\textbf{d.} Use the boxplot() function to visualize the data for the "Mobile Weight" column. What 
+do you observe? Do the results align with those from (c)?
+
+\textbf{e.} In which currency can you buy the cheapest mobile phone, and how much does it cost?
+
+Note:\\
+*The data is on NTU COOL. Use read\_csv() to read this data and call it \textit{\textbf{mymobiles}}. \\
+*Units: Screen size: inches; Phone weights: gram \\
+*1 USD (USA) = 3.67 AED (Dubai) = 87.33 INR (India)
+
+
+
+\section*{Exercise 2: Data Visualization}
+The \textit{\textbf{Anderson.csv}} dataset includes 42 leukemia patients, focusing on the time to relapse after receiving treatment. \\
+Sex: 0 = female, 1 = male\\
+Rx: 0 = New treatment, 1 = Standard treatment\\
+Relapse: 0 = No relapse, 1 = Relapse occurred\\
+Survt: Time in weeks from the start of treatment until the relapse or the last observation\\
+logWBC: white blood cell count (log transform) \\
+
+Visualize the distribution of the data. The figure should be easy to read.\\
+
+\textbf{a.} Plot the bar plot of Sex in the Anderson dataset. Set the figure title to “Bar Plot of Sex.” \\
+Modify the y-axis limit to range from 0 to 25. Change the color of the bars to whatever you like.
+
+\textbf{b.} Plot the histogram of logWBC. Change the number of bins to whatever you like.
+
+\textbf{c.} Plot the scatter plot of logWBC (x) vs. Survt (y). Set the x-axis label to “logWBC” and the y-axis label to “Survival Time.”
+
+Note: \\
+The data can be found on NTU COOL. Use read\_csv() to read this data and call it \textit{\textbf{anderson}}
+
+
+
+\end{document}
