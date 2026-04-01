@@ -1,2 +1,2 @@
 # Agron2002_TA_course_slide
-This is the latex code for the slide of Agroon2002 TA courses 
+Decomposition for 2026_spring Agron2002 Statistic course lab session slide and assignments
